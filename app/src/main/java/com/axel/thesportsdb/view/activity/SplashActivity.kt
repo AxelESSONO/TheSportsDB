@@ -1,4 +1,4 @@
-package com.axel.thesportsdb.view
+package com.axel.thesportsdb.view.activity
 
 import android.content.Intent
 import android.os.Bundle
