@@ -7,6 +7,7 @@ plugins {
 }
 
 android {
+
     namespace 'com.axel.thesportsdb'
     compileSdk 33
 
@@ -16,8 +17,12 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file("local.properties").newDataInputStream())
+        buildConfigField "String", "API_KEY", "\"${properties.getProperty("API_KEY")}\""
+        buildConfigField "String", "BASE_URL", "\"${properties.getProperty("BASE_URL")}\""
     }
 
     buildTypes {
@@ -33,6 +38,7 @@ android {
 
     buildFeatures {
         dataBinding true
+        buildConfig = true
     }
 
     kotlinOptions {
