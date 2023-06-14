@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TheSportsDB" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/toolbar_color</item>
     </style>
 
     <style name="Theme.TheSportsDB" parent="Base.Theme.TheSportsDB" />
@@ -12,7 +12,7 @@
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/white</item>
         <item name="colorAccent">@color/white</item>
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
 </resources>

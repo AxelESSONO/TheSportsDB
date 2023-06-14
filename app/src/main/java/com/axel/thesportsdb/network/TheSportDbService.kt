@@ -15,8 +15,8 @@ interface TheSportDbService {
 
     @GET("{apiKey}/search_all_teams.php")
     suspend fun getSearchAllTeamsByLeagueName(
-        @Query("l") league : String,
-        @Path("apiKey") apiKey: String = BuildConfig.API_KEY
+        @Path("apiKey") apiKey: String = BuildConfig.API_KEY,
+        @Query("l") league : String
     ) : Response<TeamResponse>
 
 }

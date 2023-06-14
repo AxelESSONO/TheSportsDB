@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#FFAAA6A6</color>
+    <color name="blue">#FF1E9FFF</color>
+    <color name="shimmer_background">#FFDDDDDD</color>
+    <color name="grey_color">#FFCDCCCC</color>
+    <color name="toolbar_color">#5D2B8F</color>
 </resources>
